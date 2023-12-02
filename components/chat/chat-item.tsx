@@ -83,7 +83,7 @@ export const ChatItem = ({
             content: content
         })
 
-    }, [content])
+    }, [content, form])
 
 
     useEffect(() => {

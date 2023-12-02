@@ -39,7 +39,6 @@ export const useChatQuery = ({
     status,
   } = useInfiniteQuery<any>({
     queryKey: [queryKey],
-    //@ts-expect-error
     queryFn: fetchMessages,
     getNextPageParam: (lastPage) => lastPage?.nextCursor,
     refetchInterval: 1000,
